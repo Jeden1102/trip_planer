@@ -1,5 +1,6 @@
 import Aura from "@primeuix/themes/aura";
 import { definePreset } from "@primeuix/themes";
+import tailwindcss from "@tailwindcss/vite";
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 const MyPreset = definePreset(Aura, {
@@ -28,8 +29,9 @@ export default defineNuxtConfig({
     "@nuxt/icon",
     "@nuxt/image",
     "@primevue/nuxt-module",
-    "@nuxtjs/tailwindcss",
   ],
+  css: ["~/assets/css/main.css"],
+  vite: { plugins: [tailwindcss()] },
   primevue: {
     options: {
       theme: {
