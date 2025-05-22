@@ -17,6 +17,7 @@
     "@primeuix/themes": "^1.1.1",
     "@tailwindcss/vite": "^4.1.7",
     "@vueuse/core": "^13.2.0",
+    "dotted-map": "^2.2.3",
     "lucide-vue-next": "^0.511.0",
     "motion-v": "^1.1.0-alpha.1",
     "nuxt": "^3.17.4",
@@ -28,6 +29,7 @@
   "devDependencies": {
     "@inspira-ui/plugins": "^0.0.1",
     "@primevue/nuxt-module": "^4.3.1",
+    "@types/locomotive-scroll": "^4.1.4",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "tailwind-merge": "^3.3.0",
