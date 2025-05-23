@@ -3,3 +3,19 @@
 body {
   @apply bg-gradient-to-tr from-gray-100 via-gray-200 to-gray-100;
 }
+
+.p-select.plain {
+  @apply bg-transparent !border-transparent shadow-none;
+
+  svg {
+    @apply text-black;
+  }
+
+  .p-select-dropdown {
+    @apply w-3;
+  }
+
+  & > span {
+    @apply font-medium text-base text-black;
+  }
+}

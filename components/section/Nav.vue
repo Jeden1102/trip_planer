@@ -27,7 +27,7 @@ const scrolled = computed(() => y.value > 20);
     :class="
       cn(
         'fixed top-6 left-0 right-0 z-50 container mx-auto py-6 px-8 flex items-center justify-between rounded-2xl transition-all duration-300',
-        'backdrop-blur-md shadow-sm bg-white/50',
+        scrolled && 'backdrop-blur-md shadow-sm bg-white/50',
         scrolled &&
           !menuActive &&
           'bg-transparent border-none shadow-none backdrop-blur-none'
@@ -71,6 +71,7 @@ const scrolled = computed(() => y.value > 20);
           optionLabel="label"
           optionValue="value"
           size="small"
+          class="plain"
         />
       </div>
 
