@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full bg-white py-40 dark:bg-black">
+  <div class="w-full bg-white py-20 dark:bg-black">
     <div class="mx-auto max-w-7xl text-center">
       <p class="text-xl font-bold text-black md:text-4xl dark:text-white">
         Explore the world

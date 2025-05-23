@@ -1,10 +1,8 @@
 <template>
+  <SectionNav />
   <NuxtPage />
   <SectionAboveFooter />
+  <SectionFooter />
 </template>
 
-<script lang="ts" setup>
-const checked = ref(true);
-
-const date = ref(null);
-</script>
+<script lang="ts" setup></script>

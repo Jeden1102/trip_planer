@@ -1,0 +1,10 @@
+{
+  "welcome": "Welcome",
+  "nav" :{
+    "home": "Home",
+    "product": "Product",
+    "login": "Login",
+    "about": "About",
+    "generate": "Generate"
+  }
+}

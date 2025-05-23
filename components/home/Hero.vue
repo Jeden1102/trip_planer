@@ -16,12 +16,12 @@
       class="relative flex flex-col items-center justify-center gap-4 px-4"
     >
       <div class="text-center text-3xl font-bold md:text-7xl">
-        AI trip generator
+        AI trip generator {{ $t("welcome") }}
       </div>
       <div class="py-4 text-base font-extralight md:text-4xl">
         Explore the world with AI-generated travel experiences
       </div>
-      <UiInteractiveHoverButton href="/test" text="Generate a trip" />
+      <UiInteractiveHoverButton to="/test" text="Generate a trip" />
     </Motion>
   </AuroraBackground>
 </template>

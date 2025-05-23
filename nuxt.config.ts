@@ -2,21 +2,20 @@ import Aura from "@primeuix/themes/aura";
 import { definePreset } from "@primeuix/themes";
 import tailwindcss from "@tailwindcss/vite";
 // https://nuxt.com/docs/api/configuration/nuxt-config
-
 const MyPreset = definePreset(Aura, {
   semantic: {
     primary: {
-      50: "{indigo.50}",
-      100: "{indigo.100}",
-      200: "{indigo.200}",
-      300: "{indigo.300}",
-      400: "{indigo.400}",
-      500: "{indigo.500}",
-      600: "{indigo.600}",
-      700: "{indigo.700}",
-      800: "{indigo.800}",
-      900: "{indigo.900}",
-      950: "{indigo.950}",
+      50: "#EBF6F7",
+      100: "#DAEEF0",
+      200: "#A5D1D6",
+      300: "7AB7BF}",
+      400: "#33818F",
+      500: "#09505f",
+      600: "#074554",
+      700: "#053647",
+      800: "#032638",
+      900: "#021B2B",
+      950: "#010F1C",
     },
   },
 });
@@ -29,6 +28,7 @@ export default defineNuxtConfig({
     "@nuxt/icon",
     "@nuxt/image",
     "@primevue/nuxt-module",
+    "@nuxtjs/i18n",
   ],
   css: ["~/assets/css/main.css"],
   vite: { plugins: [tailwindcss()] },
@@ -36,7 +36,17 @@ export default defineNuxtConfig({
     options: {
       theme: {
         preset: MyPreset,
+        options: {
+          darkModeSelector: "light",
+        },
       },
     },
+  },
+  i18n: {
+    defaultLocale: "en",
+    locales: [
+      { code: "en", name: "English", file: "en.json" },
+      { code: "pl", name: "Polish", file: "pl.json" },
+    ],
   },
 });

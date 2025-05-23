@@ -6,18 +6,20 @@
 </template>
 
 <style scoped>
+@import "tailwindcss";
+
 .aurora-bg {
   position: relative;
   height: 100vh;
   width: 100%;
   overflow: hidden;
-  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #0f172a;
   text-align: center;
   z-index: 0;
+  @apply bg-gray-200;
 }
 
 .aurora-stripes {

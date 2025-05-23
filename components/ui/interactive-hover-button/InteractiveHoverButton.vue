@@ -1,11 +1,11 @@
 <template>
   <component
-    :is="props.href ? 'a' : 'button'"
-    :href="props.href"
+    :is="props.to ? NuxtLink : 'button'"
+    :to="props.to"
     ref="buttonRef"
     :class="
       cn(
-        'group relative w-auto cursor-pointer overflow-hidden rounded-full border bg-black text-white p-2 px-6 text-center font-semibold',
+        'group relative w-auto cursor-pointer overflow-hidden rounded-full  bg-black text-white p-2 px-6 text-center font-semibold',
         props.class
       )
     "
@@ -42,17 +42,19 @@
 </template>
 
 <script lang="ts" setup>
-import { cn } from "@/lib/utils";
 import { ref } from "vue";
+import { cn } from "@/lib/utils";
+import { NuxtLink } from "#components";
 
 interface Props {
   text?: string;
   class?: string;
-  href?: string;
+  to?: string;
 }
+
 const props = withDefaults(defineProps<Props>(), {
   text: "Button",
 });
 
-const buttonRef = ref<HTMLButtonElement>();
+const buttonRef = ref<HTMLButtonElement | null>(null);
 </script>
