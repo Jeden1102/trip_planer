@@ -33,7 +33,7 @@
             stroke="url(#path-gradient)"
             stroke-width="1"
             :initial="{ pathLength: 0 }"
-            :animate="{ pathLength: 1 }"
+            :while-in-view="{ pathLength: 1 }"
             :transition="{ duration: 1, delay: 0.5 * i, ease: 'easeOut' }"
           />
         </g>
