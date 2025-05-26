@@ -1,10 +1,43 @@
 {
-  "welcome": "Welcome",
+  "common": {
+    "generateATrip": "Generate a trip"
+  },
   "nav" :{
     "home": "Home",
     "product": "Product",
     "login": "Login",
     "about": "About",
     "generate": "Generate"
+  },
+  "features":{
+    "feature_1" : {
+      "title": "Flexible dates",
+      "description": "Choose your own dates for your trip"
+    },
+    "feature_2" : {
+      "title": "Travel anywhere",
+      "description": "Choose any place you want to visit"
+    },
+    "feature_3" : {
+      "title": "Fully customizable",
+      "description": "Customize your trip to your liking"
+    }
+  },
+  "aboveFooter":{
+    "title":"Explore the world",
+    "subtitle":"Break free from the monotony of your everyday life and embark on a journey of discovery through our AI-generated travel experiences."
+  },
+  "footer": {
+    "navigationTitle": "Navigation",
+    "aboutTitle": "About",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "createdBy": "AI Trip generator created by"
+  },
+  "home":{
+    "hero":{
+      "title":"AI trip generator",
+      "subtitle":"Explore the world with AI-generated travel experiences"
+    }
   }
 }

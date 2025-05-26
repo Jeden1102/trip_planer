@@ -8,6 +8,7 @@
         y: 0,
         filter: 'blur(0px)',
       }"
+      :inViewOptions="{ once: true }"
       :transition="{
         delay: 0.3,
         duration: 0.8,
@@ -15,13 +16,16 @@
       }"
       class="relative flex flex-col items-center justify-center gap-4 px-4"
     >
-      <div class="text-center text-3xl font-bold md:text-7xl">
-        AI trip generator {{ $t("welcome") }}
+      <div class="text-center text-5xl font-bold md:text-7xl">
+        {{ $t("home.hero.title") }}
       </div>
-      <div class="py-4 text-base font-extralight md:text-4xl">
-        Explore the world with AI-generated travel experiences
+      <div class="py-4 text-xl font-extralight md:text-4xl">
+        {{ $t("home.hero.subtitle") }}
       </div>
-      <UiInteractiveHoverButton to="/test" text="Generate a trip" />
+      <UiInteractiveHoverButton
+        to="/generator"
+        :text="$t('common.generateATrip')"
+      />
     </Motion>
   </AuroraBackground>
 </template>

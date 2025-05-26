@@ -1,24 +1,25 @@
-<script lang="ts" setup>
-const currentYear = new Date().getFullYear();
-</script>
-
 <template>
   <footer class="flex flex-col bg-zinc-900 text-gray-300">
     <div
-      class="container mx-auto flex flex-col gap-4 py-8 md:flex-row md:gap-36"
+      class="container px-4 mx-auto flex flex-col gap-4 py-8 md:flex-row md:gap-36"
     >
       <div>
         <NuxtLink to="/">
-          <NuxtImg src="/images/logo.png" alt="logo" width="120" />
+          <NuxtImg
+            src="/images/logo.png"
+            alt="logo"
+            width="120"
+            loading="lazy"
+          />
         </NuxtLink>
       </div>
       <div class="flex flex-col gap-2">
         <p class="mb-2 text-lg font-semibold">
           {{ $t("footer.navigationTitle") }}
         </p>
-        <NuxtLink to="/">{{ $t("navigation.home") }}</NuxtLink>
-        <NuxtLink to="/product">{{ $t("navigation.product") }}</NuxtLink>
-        <NuxtLink to="/recruiter">{{ $t("navigation.recruiter") }}</NuxtLink>
+        <NuxtLink to="/">{{ $t("nav.home") }}</NuxtLink>
+        <NuxtLink to="/product">{{ $t("nav.product") }}</NuxtLink>
+        <NuxtLink to="/recruiter">{{ $t("nav.generate") }}</NuxtLink>
       </div>
       <div class="flex flex-col gap-2">
         <p class="mb-2 text-lg font-semibold">{{ $t("footer.aboutTitle") }}</p>
@@ -34,3 +35,7 @@ const currentYear = new Date().getFullYear();
     </div>
   </footer>
 </template>
+
+<script lang="ts" setup>
+const currentYear = new Date().getFullYear();
+</script>

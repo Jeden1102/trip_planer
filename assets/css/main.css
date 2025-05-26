@@ -12,10 +12,10 @@ body {
   }
 
   .p-select-dropdown {
-    @apply w-3;
+    @apply w-6 md:w-3;
   }
 
   & > span {
-    @apply font-medium text-base text-black;
+    @apply font-medium md:text-base text-black text-5xl py-1 px-0 md:px-1;
   }
 }

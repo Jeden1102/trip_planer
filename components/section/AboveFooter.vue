@@ -2,11 +2,10 @@
   <div class="w-full bg-white py-20 dark:bg-black">
     <div class="mx-auto max-w-7xl text-center">
       <p class="text-xl font-bold text-black md:text-4xl dark:text-white">
-        Explore the world
+        {{ $t("aboveFooter.title") }}
       </p>
       <p class="mx-auto max-w-2xl py-4 text-sm text-neutral-500 md:text-lg">
-        Break free from the monotony of your everyday life and embark on a
-        journey of discovery through our AI-generated travel experiences.
+        {{ $t("aboveFooter.subtitle") }}
       </p>
     </div>
     <WorldMap :dots="dots" map-color="#FFFFFF40" map-bg-color="black" />
@@ -14,7 +13,7 @@
 </template>
 
 <script lang="ts" setup>
-import WorldMap from "../ui/world-map/WorldMap.vue";
+import WorldMap from "@/components/ui/world-map/WorldMap.vue";
 
 const dots = [
   {

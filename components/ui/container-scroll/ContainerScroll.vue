@@ -1,7 +1,7 @@
 <template>
   <div
     ref="containerRef"
-    class="relative flex h-[60rem] items-center justify-center p-2 md:h-[80rem] md:p-20"
+    class="relative flex h-[60rem] items-center justify-center p-2 md:h-[70rem] md:p-20"
   >
     <div class="relative w-full py-10 md:py-40" style="perspective: 1000px">
       <ContainerScrollTitle :translate="translateY">
@@ -41,7 +41,8 @@ const { bottom } = useElementBounding(containerRef);
 
 const scrollYProgress = computed(() => {
   if (!bottom.value) return 0;
-  return 1 - Math.max(0, bottom.value - scrollY.value) / height.value;
+  console.log(bottom.value / height.value);
+  return bottom.value / height.value;
 });
 
 const scaleDimensions = computed(() =>
