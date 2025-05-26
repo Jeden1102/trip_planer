@@ -39,5 +39,25 @@
       "title":"AI trip generator",
       "subtitle":"Explore the world with AI-generated travel experiences"
     }
+  },
+  "testimonials" :{
+    "0" : {
+      "quote": "AI Trip generator is a game-changer for those who want to explore the world without the hassle of planning it themselves.",
+      "name": "Buzz Lightyear",
+      "role": "Glasgow Trip",
+      "img": "https://randomuser.me/api/portraits/men/1.jpg"
+    },
+    "1" : {
+      "quote": "AI Trip generator helped me discover new places and cultures that I never would have found on my own.",
+      "name": "Janko Chanowski",
+      "role": "London Trip",
+      "img": "https://randomuser.me/api/portraits/men/1.jpg"
+    },
+    "2" : {
+      "quote": "With the use of AI Trip generator, I was able to plan my trip without the need for a trip planner.",
+      "name": "John Doe",
+      "role": "China exploration",
+      "img": "https://randomuser.me/api/portraits/men/1.jpg"
+    }
   }
 }

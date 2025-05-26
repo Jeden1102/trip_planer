@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col overflow-hidden container mx-auto">
+  <div class="flex flex-col overflow-hidden container">
     <ContainerScroll v-for="feature in features">
       <template #title>
         <MotionSimpleText>

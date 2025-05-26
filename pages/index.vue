@@ -2,6 +2,7 @@
   <main>
     <HomeHero />
     <HomeFeatures />
+    <HomeTestimonials />
   </main>
 </template>
 
