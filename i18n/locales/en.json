@@ -6,7 +6,7 @@
     "home": "Home",
     "product": "Product",
     "login": "Login",
-    "about": "About",
+    "community": "Community",
     "generate": "Generate"
   },
   "features":{
@@ -59,5 +59,49 @@
       "role": "China exploration",
       "img": "https://randomuser.me/api/portraits/men/1.jpg"
     }
+  },
+  "product":{
+    "hero":{
+      "title":"Product",
+      "subtitle":"Learn more about our product. AI Trip generator is a game-changer for those who want to explore the world."
+    },
+    "faq": {
+    "title": "Frequently asked questions",
+    "desc": "Here are some frequently asked questions about our product",
+    "questions": {
+      "question_1": {
+        "question": "What is AI Trip generator?",
+        "answer": "AI Trip generator is a travel planning app that uses artificial intelligence to generate personalized travel experiences based on your preferences."
+      },
+      "question_2": {
+        "question": "How does the trip generation process work?",
+        "answer": "You start by filling out a short multi-step form with your travel preferences such as location, dates, number of people, interests, and intensity level. Based on this, our AI generates a personalized itinerary with attractions, estimated times, and costs."
+      },
+      "question_3": {
+        "question": "Can I customize or edit the suggested trip?",
+        "answer": "Yes! You can remove, rearrange, or replace attractions in your itinerary. You’ll also see them on an interactive map for easy planning."
+      },
+      "question_4": {
+        "question": "Can I share my trip with friends or family?",
+        "answer": "Absolutely. You can generate a shareable link or invite specific users to view and edit your trip plan collaboratively."
+      },
+      "question_5": {
+        "question": "Does the AI include events like concerts or sports matches?",
+        "answer": "If you select interests like entertainment or sports, the AI will try to include relevant events happening during your stay using external event APIs where available."
+      },
+      "question_6": {
+        "question": "Does the app show estimated costs for the trip?",
+        "answer": "Yes, the summary includes average costs for accommodation, meals, and entrance fees for attractions. This helps you plan your budget more effectively."
+      },
+      "question_7": {
+        "question": "Will I get weather information for my travel dates?",
+        "answer": "If your travel dates are within the next two weeks, the AI will show forecasted weather conditions for your destination to help you pack accordingly."
+      },
+      "question_8": {
+        "question": "Can I save and access multiple trip plans?",
+        "answer": "Yes, you can create, save, and manage multiple trip plans from your dashboard. This is perfect for comparing options or planning different parts of a longer journey."
+      }
+    }
+  }
   }
 }

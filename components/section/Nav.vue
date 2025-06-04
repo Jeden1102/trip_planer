@@ -37,9 +37,9 @@
       <MotionSimpleText :transition="{ delay: 0.2 }">
         <NuxtLink
           class="font-medium text-5xl md:text-base"
-          :to="$localePath('about')"
+          :to="$localePath('community')"
         >
-          {{ $t("nav.about") }}
+          {{ $t("nav.community") }}
         </NuxtLink>
       </MotionSimpleText>
     </div>
