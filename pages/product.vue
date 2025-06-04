@@ -1,5 +1,7 @@
 <template>
-  <main>Product</main>
+  <main>
+    <HomeFeatures />
+  </main>
 </template>
 
 <script setup lang="ts"></script>

@@ -1,5 +1,7 @@
 <template>
-  <main>FAQ</main>
+  <main>
+    <MoleculesGlobeLoader />
+  </main>
 </template>
 
 <script setup lang="ts"></script>

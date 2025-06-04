@@ -78,8 +78,8 @@
         :to="$localePath('generator')"
         :class="
           cn(
-            'left-1/2 -translate-x-1/2 bottom-6 md:translate-x-0 md:static hidden',
-            menuActive && 'fixed block'
+            'left-1/2 -translate-x-1/2 bottom-6 md:translate-x-0 md:static',
+            menuActive && 'fixed'
           )
         "
       />
