@@ -19,7 +19,10 @@
       <div class="text-center text-5xl font-bold md:text-7xl">
         {{ title }}
       </div>
-      <div class="py-4 text-xl font-extralight md:text-4xl leading-tight">
+      <div
+        class="py-4 text-xl font-extralight md:text-4xl leading-tight"
+        v-if="subtitle"
+      >
         {{ subtitle }}
       </div>
       <UiInteractiveHoverButton v-if="cta" :to="cta.href" :text="cta.text" />
@@ -33,7 +36,7 @@ import AuroraBackground from "@/components/ui/aurora-background/AuroraBackground
 
 defineProps<{
   title: string;
-  subtitle: string;
+  subtitle?: string;
   cta?: {
     text: string;
     href: string;

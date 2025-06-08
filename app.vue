@@ -1,8 +1,7 @@
 <template>
-  <SectionNav />
-  <NuxtPage />
-  <SectionAboveFooter />
-  <SectionFooter />
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
 
 <script lang="ts" setup></script>

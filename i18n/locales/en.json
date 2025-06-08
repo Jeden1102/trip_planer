@@ -7,7 +7,10 @@
     "product": "Product",
     "login": "Login",
     "community": "Community",
-    "generate": "Generate"
+    "generate": "Generate",
+    "profile": "Profile",
+    "user": "User",
+    "logout": "Logout"
   },
   "features":{
     "feature_1" : {
@@ -23,6 +26,12 @@
       "description": "Customize your trip to your liking"
     }
   },
+      "auth": {
+      "login": "Login",
+      "password": "Password",
+      "passwordRepeat": "Password repeat",
+      "register": "Register"
+    },
   "aboveFooter":{
     "title":"Explore the world",
     "subtitle":"Break free from the monotony of your everyday life and embark on a journey of discovery through our AI-generated travel experiences."
@@ -103,5 +112,39 @@
       }
     }
   }
-  }
+  },
+      "register": {
+      "haveAccount": "Have an account? Log in"
+    },
+    "login": {
+      "meta": {
+        "title": "Login",
+        "description": "Log in to access your account and start preparing for interviews."
+      },
+      "providers": "Use one of the following providers",
+      "noAccount": "Don't have an account? Create new one"
+    },
+        "apiResponses": {
+      "emailNotVerified": "Email not verified",
+      "invalidCredentials": "Invalid credentials",
+      "chatNotFound": "Chat not found",
+      "chatNowAllowed": "You are not allowed to access this chat",
+      "somethingWentWrong": "Something went wrong",
+      "missingCode": "Missing code",
+      "emailConfirmed": "Email confirmed succesfully. Now you can login to your account!",
+      "failedToConfirmEmail": "Failed to confirm email",
+      "invalidChatId": "Invalid chat id",
+      "failedToSaveChat": "Failed to save chat",
+      "chatIdRequired": "Chat id is required",
+      "updateChatFailed": "Update chat failed",
+      "userNotAuthenticated": "User is not authenticated",
+      "failedToFetchUserChats": "Failed to fetch user chats",
+      "incorrectPassword": "Incorrect password",
+      "missingUri": "Missing uri",
+      "issueFetchingPage": "Issue fetching page",
+      "emailTaken": "Email is already taken",
+      "accountCreated": "Account created successfully. To confirm your account, please check your email.",
+      "failedToCreateAccount": "Failed to create account",
+      "failedToSendVerificationEmail": "Failed to send verification email"
+    }
 }

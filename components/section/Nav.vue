@@ -55,11 +55,41 @@
       >
         <MotionSimpleText :transition="{ delay: 0.3 }">
           <NuxtLink
+            v-if="!data"
             class="font-medium text-5xl md:text-base"
             :to="$localePath('login')"
           >
             {{ $t("nav.login") }}
           </NuxtLink>
+          <template v-else>
+            <Button
+              type="button"
+              @click="toggle"
+              aria-haspopup="true"
+              aria-controls="overlay_menu"
+              :label="$t('nav.user')"
+              class="plain"
+            />
+            <Menu :model="items" ref="menu" id="overlay_menu" :popup="true">
+              <template #item="{ item, props }">
+                <router-link
+                  v-slot="{ href, navigate }"
+                  :to="$localePath(item.route)"
+                  custom
+                >
+                  <a
+                    v-ripple
+                    :href="href"
+                    v-bind="props.action"
+                    @click="navigate"
+                  >
+                    <span :class="item.icon" />
+                    <span class="ml-2">{{ item.label }}</span>
+                  </a>
+                </router-link>
+              </template>
+            </Menu>
+          </template>
         </MotionSimpleText>
         <MotionSimpleText :transition="{ delay: 0.4 }">
           <Select
@@ -109,7 +139,24 @@ import { useWindowScroll } from "@vueuse/core";
 import InteractiveHoverButton from "../ui/interactive-hover-button/InteractiveHoverButton.vue";
 import { cn } from "~/lib/utils";
 
+const menu = ref();
+
+const { data, signOut } = useAuth();
+
 const { locales, locale, setLocale } = useI18n();
+
+const items = ref([
+  {
+    label: "Profile",
+    route: "/profile",
+  },
+  {
+    label: "Logout",
+    command: () => {
+      signOut();
+    },
+  },
+]);
 
 const options = computed(() =>
   locales.value.map((l) => ({ label: l.name, value: l.code }))
@@ -121,6 +168,10 @@ const menuActive = ref(false);
 watch(selectedLocale, (newLocale) => {
   setLocale(newLocale);
 });
+
+const toggle = (event) => {
+  menu.value.toggle(event);
+};
 
 const { y } = useWindowScroll();
 const scrolled = computed(() => y.value > 20);

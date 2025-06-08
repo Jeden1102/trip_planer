@@ -1,11 +1,12 @@
 @import "tailwindcss";
 
 body {
-  @apply bg-gradient-to-tr from-gray-100 via-gray-200 to-gray-100;
+  @apply bg-gradient-to-tr from-gray-100 via-gray-200 to-gray-100 min-h-screen;
 }
 
-.p-select.plain {
-  @apply bg-transparent !border-transparent shadow-none;
+.p-select.plain,
+.p-button.plain {
+  @apply bg-transparent !border-transparent shadow-none p-0 hover:bg-transparent;
 
   svg {
     @apply text-black;
