@@ -1,7 +1,7 @@
 <template>
   <div
     ref="containerRef"
-    class="relative w-full max-w-[800px] mx-auto aspect-[2/1] rounded-lg bg-white font-sans dark:bg-black"
+    class="relative w-full max-w-[800px] mx-auto aspect-[2/1] rounded-lg font-sans bg-black"
   >
     <NuxtImg
       :src="`data:image/svg+xml;utf8,${encodeURIComponent(svgMap)}`"

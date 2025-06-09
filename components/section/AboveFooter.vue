@@ -1,16 +1,16 @@
 <template>
-  <div class="w-full bg-white py-20 dark:bg-black">
+  <div class="w-full py-20 bg-black">
     <div class="mx-auto max-w-7xl text-center">
       <MotionSimpleText>
-        <p class="text-xl font-bold text-black md:text-4xl dark:text-white">
+        <p class="text-xl font-bold text-white md:text-4xl">
           {{ $t("aboveFooter.title") }}
         </p>
-        <p class="mx-auto max-w-2xl py-4 text-sm text-neutral-500 md:text-lg">
+        <p class="mx-auto max-w-2xl py-4 text-sm text-neutral-300 md:text-lg">
           {{ $t("aboveFooter.subtitle") }}
         </p>
       </MotionSimpleText>
     </div>
-    <WorldMap :dots="dots" map-color="#FFFFFF40" map-bg-color="black" />
+    <WorldMap :dots="dots" map-color="gray" map-bg-color="black" />
   </div>
 </template>
 
