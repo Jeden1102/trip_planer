@@ -55,6 +55,11 @@ definePageMeta({
           class="w-fit flex text-secondary hover:underline mx-auto"
           >{{ $t("login.noAccount") }}</NuxtLinkLocale
         >
+        <NuxtLinkLocale
+          to="/forgot-password"
+          class="w-fit flex hover:underline mx-auto mt-4"
+          >{{ $t("login.forgotPassword") }}</NuxtLinkLocale
+        >
       </template>
     </Card>
   </div>

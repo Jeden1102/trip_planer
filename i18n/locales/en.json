@@ -2,7 +2,7 @@
   "common": {
     "generateATrip": "Generate a trip"
   },
-  "nav" :{
+  "nav": {
     "home": "Home",
     "product": "Product",
     "login": "Login",
@@ -12,29 +12,30 @@
     "user": "User",
     "logout": "Logout"
   },
-  "features":{
-    "feature_1" : {
+  "features": {
+    "feature_1": {
       "title": "Flexible dates",
       "description": "Choose your own dates for your trip"
     },
-    "feature_2" : {
+    "feature_2": {
       "title": "Travel anywhere",
       "description": "Choose any place you want to visit"
     },
-    "feature_3" : {
+    "feature_3": {
       "title": "Fully customizable",
       "description": "Customize your trip to your liking"
     }
   },
-      "auth": {
-      "login": "Login",
-      "password": "Password",
-      "passwordRepeat": "Password repeat",
-      "register": "Register"
-    },
-  "aboveFooter":{
-    "title":"Explore the world",
-    "subtitle":"Break free from the monotony of your everyday life and embark on a journey of discovery through our AI-generated travel experiences."
+  "auth": {
+    "login": "Login",
+    "password": "Password",
+    "passwordRepeat": "Password repeat",
+    "register": "Register",
+    "resetPassword": "Reset password"
+  },
+  "aboveFooter": {
+    "title": "Explore the world",
+    "subtitle": "Break free from the monotony of your everyday life and embark on a journey of discovery through our AI-generated travel experiences."
   },
   "footer": {
     "navigationTitle": "Navigation",
@@ -43,108 +44,114 @@
     "privacy": "Privacy Policy",
     "createdBy": "AI Trip generator created by"
   },
-  "home":{
-    "hero":{
-      "title":"AI trip generator",
-      "subtitle":"Explore the world with AI-generated travel experiences"
+  "home": {
+    "hero": {
+      "title": "AI trip generator",
+      "subtitle": "Explore the world with AI-generated travel experiences"
     }
   },
-  "testimonials" :{
-    "0" : {
+  "testimonials": {
+    "0": {
       "quote": "AI Trip generator is a game-changer for those who want to explore the world without the hassle of planning it themselves.",
       "name": "Buzz Lightyear",
       "role": "Glasgow Trip",
       "img": "https://randomuser.me/api/portraits/men/1.jpg"
     },
-    "1" : {
+    "1": {
       "quote": "AI Trip generator helped me discover new places and cultures that I never would have found on my own.",
       "name": "Janko Chanowski",
       "role": "London Trip",
       "img": "https://randomuser.me/api/portraits/men/1.jpg"
     },
-    "2" : {
+    "2": {
       "quote": "With the use of AI Trip generator, I was able to plan my trip without the need for a trip planner.",
       "name": "John Doe",
       "role": "China exploration",
       "img": "https://randomuser.me/api/portraits/men/1.jpg"
     }
   },
-  "product":{
-    "hero":{
-      "title":"Product",
-      "subtitle":"Learn more about our product. AI Trip generator is a game-changer for those who want to explore the world."
+  "product": {
+    "hero": {
+      "title": "Product",
+      "subtitle": "Learn more about our product. AI Trip generator is a game-changer for those who want to explore the world."
     },
     "faq": {
-    "title": "Frequently asked questions",
-    "desc": "Here are some frequently asked questions about our product",
-    "questions": {
-      "question_1": {
-        "question": "What is AI Trip generator?",
-        "answer": "AI Trip generator is a travel planning app that uses artificial intelligence to generate personalized travel experiences based on your preferences."
-      },
-      "question_2": {
-        "question": "How does the trip generation process work?",
-        "answer": "You start by filling out a short multi-step form with your travel preferences such as location, dates, number of people, interests, and intensity level. Based on this, our AI generates a personalized itinerary with attractions, estimated times, and costs."
-      },
-      "question_3": {
-        "question": "Can I customize or edit the suggested trip?",
-        "answer": "Yes! You can remove, rearrange, or replace attractions in your itinerary. You’ll also see them on an interactive map for easy planning."
-      },
-      "question_4": {
-        "question": "Can I share my trip with friends or family?",
-        "answer": "Absolutely. You can generate a shareable link or invite specific users to view and edit your trip plan collaboratively."
-      },
-      "question_5": {
-        "question": "Does the AI include events like concerts or sports matches?",
-        "answer": "If you select interests like entertainment or sports, the AI will try to include relevant events happening during your stay using external event APIs where available."
-      },
-      "question_6": {
-        "question": "Does the app show estimated costs for the trip?",
-        "answer": "Yes, the summary includes average costs for accommodation, meals, and entrance fees for attractions. This helps you plan your budget more effectively."
-      },
-      "question_7": {
-        "question": "Will I get weather information for my travel dates?",
-        "answer": "If your travel dates are within the next two weeks, the AI will show forecasted weather conditions for your destination to help you pack accordingly."
-      },
-      "question_8": {
-        "question": "Can I save and access multiple trip plans?",
-        "answer": "Yes, you can create, save, and manage multiple trip plans from your dashboard. This is perfect for comparing options or planning different parts of a longer journey."
+      "title": "Frequently asked questions",
+      "desc": "Here are some frequently asked questions about our product",
+      "questions": {
+        "question_1": {
+          "question": "What is AI Trip generator?",
+          "answer": "AI Trip generator is a travel planning app that uses artificial intelligence to generate personalized travel experiences based on your preferences."
+        },
+        "question_2": {
+          "question": "How does the trip generation process work?",
+          "answer": "You start by filling out a short multi-step form with your travel preferences such as location, dates, number of people, interests, and intensity level. Based on this, our AI generates a personalized itinerary with attractions, estimated times, and costs."
+        },
+        "question_3": {
+          "question": "Can I customize or edit the suggested trip?",
+          "answer": "Yes! You can remove, rearrange, or replace attractions in your itinerary. You’ll also see them on an interactive map for easy planning."
+        },
+        "question_4": {
+          "question": "Can I share my trip with friends or family?",
+          "answer": "Absolutely. You can generate a shareable link or invite specific users to view and edit your trip plan collaboratively."
+        },
+        "question_5": {
+          "question": "Does the AI include events like concerts or sports matches?",
+          "answer": "If you select interests like entertainment or sports, the AI will try to include relevant events happening during your stay using external event APIs where available."
+        },
+        "question_6": {
+          "question": "Does the app show estimated costs for the trip?",
+          "answer": "Yes, the summary includes average costs for accommodation, meals, and entrance fees for attractions. This helps you plan your budget more effectively."
+        },
+        "question_7": {
+          "question": "Will I get weather information for my travel dates?",
+          "answer": "If your travel dates are within the next two weeks, the AI will show forecasted weather conditions for your destination to help you pack accordingly."
+        },
+        "question_8": {
+          "question": "Can I save and access multiple trip plans?",
+          "answer": "Yes, you can create, save, and manage multiple trip plans from your dashboard. This is perfect for comparing options or planning different parts of a longer journey."
+        }
       }
     }
-  }
   },
-      "register": {
-      "haveAccount": "Have an account? Log in"
+  "register": {
+    "haveAccount": "Have an account? Log in"
+  },
+  "login": {
+    "meta": {
+      "title": "Login",
+      "description": "Log in to access your account and start preparing for interviews."
     },
-    "login": {
-      "meta": {
-        "title": "Login",
-        "description": "Log in to access your account and start preparing for interviews."
-      },
-      "providers": "Use one of the following providers",
-      "noAccount": "Don't have an account? Create new one"
-    },
-        "apiResponses": {
-      "emailNotVerified": "Email not verified",
-      "invalidCredentials": "Invalid credentials",
-      "chatNotFound": "Chat not found",
-      "chatNowAllowed": "You are not allowed to access this chat",
-      "somethingWentWrong": "Something went wrong",
-      "missingCode": "Missing code",
-      "emailConfirmed": "Email confirmed succesfully. Now you can login to your account!",
-      "failedToConfirmEmail": "Failed to confirm email",
-      "invalidChatId": "Invalid chat id",
-      "failedToSaveChat": "Failed to save chat",
-      "chatIdRequired": "Chat id is required",
-      "updateChatFailed": "Update chat failed",
-      "userNotAuthenticated": "User is not authenticated",
-      "failedToFetchUserChats": "Failed to fetch user chats",
-      "incorrectPassword": "Incorrect password",
-      "missingUri": "Missing uri",
-      "issueFetchingPage": "Issue fetching page",
-      "emailTaken": "Email is already taken",
-      "accountCreated": "Account created successfully. To confirm your account, please check your email.",
-      "failedToCreateAccount": "Failed to create account",
-      "failedToSendVerificationEmail": "Failed to send verification email"
-    }
+    "providers": "Use one of the following providers",
+    "noAccount": "Don't have an account? Create new one",
+    "forgotPassword": "Forgot your password? Reset it"
+  },
+  "apiResponses": {
+    "emailNotVerified": "Email not verified",
+    "invalidCredentials": "Invalid credentials",
+    "chatNotFound": "Chat not found",
+    "chatNowAllowed": "You are not allowed to access this chat",
+    "somethingWentWrong": "Something went wrong",
+    "missingCode": "Missing code",
+    "emailConfirmed": "Email confirmed succesfully. Now you can login to your account!",
+    "failedToConfirmEmail": "Failed to confirm email",
+    "invalidChatId": "Invalid chat id",
+    "failedToSaveChat": "Failed to save chat",
+    "chatIdRequired": "Chat id is required",
+    "updateChatFailed": "Update chat failed",
+    "userNotAuthenticated": "User is not authenticated",
+    "failedToFetchUserChats": "Failed to fetch user chats",
+    "incorrectPassword": "Incorrect password",
+    "missingUri": "Missing uri",
+    "issueFetchingPage": "Issue fetching page",
+    "emailTaken": "Email is already taken",
+    "accountCreated": "Account created successfully. To confirm your account, please check your email.",
+    "failedToCreateAccount": "Failed to create account",
+    "failedToSendVerificationEmail": "Failed to send verification email",
+    "passwordResetSent": "Password reset link sent successfully",
+    "invalidResetRequest": "Invalid reset request",
+    "invalidResetCode": "Invalid reset code",
+    "passwordResetSuccess": "Password reset successfully",
+    "failedToResetPassword": "Failed to reset password"
+  }
 }
