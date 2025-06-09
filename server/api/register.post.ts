@@ -75,7 +75,7 @@ export default defineEventHandler(async (event) => {
   }
 });
 
-const sendVerificationEmail = async (email: string) => {
+export const sendVerificationEmail = async (email: string) => {
   try {
     const { sendMail } = useNodeMailer();
     const config = useRuntimeConfig();

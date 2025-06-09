@@ -2,6 +2,7 @@ import GithubProvider from "next-auth/providers/github";
 import LinkedInProvider from "next-auth/providers/linkedin";
 import GoogleProvider from "next-auth/providers/google";
 import bcrypt from "bcrypt";
+import { sendVerificationEmail } from "../register.post";
 
 import { NuxtAuthHandler } from "#auth";
 import Credentials from "next-auth/providers/credentials";
@@ -66,6 +67,15 @@ export default NuxtAuthHandler({
             where: { email: credentials?.email },
           });
           if (user && !user.emailVerified) {
+            const code = await sendVerificationEmail(credentials.email);
+
+            await prisma.user.update({
+              where: { email: credentials.email },
+              data: {
+                emailVerificationCode: code,
+              },
+            });
+
             throw createError({
               statusCode: 500,
               statusMessage: "apiResponses.emailNotVerified",

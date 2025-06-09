@@ -1,3 +1,2 @@
 Auth:
-0) Resend verifcation mail
 1) Reset password
