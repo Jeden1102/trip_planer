@@ -27,16 +27,17 @@
 import ContainerScroll from "../ui/container-scroll/ContainerScroll.vue";
 import { useI18n } from "vue-i18n";
 
-const { messages, locale } = useI18n();
+const { t } = useI18n();
 
 const features = computed(() => {
   const arr: { title: string; subtitle: string }[] = [];
-  const currentMessages: any = messages.value[locale.value].features;
 
-  Object.keys(currentMessages).forEach((key) => {
+  const keys = [0, 1, 2, 3];
+
+  keys.forEach((key) => {
     arr.push({
-      title: currentMessages[key].title.body.static,
-      subtitle: currentMessages[key].description.body.static,
+      title: t(`features.${key}.title`),
+      subtitle: t(`features.${key}.description`),
     });
   });
 

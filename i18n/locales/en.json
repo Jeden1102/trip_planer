@@ -13,15 +13,15 @@
     "logout": "Logout"
   },
   "features": {
-    "feature_1": {
+    "0": {
       "title": "Flexible dates",
       "description": "Choose your own dates for your trip"
     },
-    "feature_2": {
+    "1": {
       "title": "Travel anywhere",
       "description": "Choose any place you want to visit"
     },
-    "feature_3": {
+    "2": {
       "title": "Fully customizable",
       "description": "Customize your trip to your liking"
     }

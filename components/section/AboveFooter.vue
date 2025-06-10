@@ -10,7 +10,9 @@
         </p>
       </MotionSimpleText>
     </div>
-    <WorldMap :dots="dots" map-color="gray" map-bg-color="black" />
+    <ClientOnly>
+      <WorldMap :dots="dots" map-color="gray" map-bg-color="black" />
+    </ClientOnly>
   </div>
 </template>
 
