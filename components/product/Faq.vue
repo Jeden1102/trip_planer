@@ -25,17 +25,17 @@
 <script setup lang="ts">
 import { useI18n } from "#imports";
 
-const { messages, locale } = useI18n();
+const { messages, locale, t } = useI18n();
 
 const questions = computed(() => {
   const arr: { title: string; content: string }[] = [];
-  const currentMessages: any =
-    messages.value[locale.value].product.faq.questions;
 
-  Object.keys(currentMessages).forEach((key) => {
+  const keys = [0, 1, 2, 3, 4, 5, 6, 7];
+
+  keys.forEach((key) => {
     arr.push({
-      title: currentMessages[key].question.body.static,
-      content: currentMessages[key].answer.body.static,
+      title: t(`product.faq.questions.${key}.question`),
+      content: t(`product.faq.questions.${key}.answer`),
     });
   });
 
