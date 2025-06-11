@@ -25,7 +25,7 @@
 <script setup lang="ts">
 import { useI18n } from "#imports";
 
-const { messages, locale, t } = useI18n();
+const { t } = useI18n();
 
 const questions = computed(() => {
   const arr: { title: string; content: string }[] = [];
